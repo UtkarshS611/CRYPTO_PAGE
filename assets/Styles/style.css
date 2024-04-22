@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    background-color: #dee2e6;
+}
+
+/*Header Styles*/
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    min-height: 10vh;
+    
+}
+
+#bars i{
+    font-size: 3rem;
+    color: #077187;
+    display: none;
+}
+
+header #header-list{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+header div h1{
+    display: flex;
+    color: #15616d;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+header div ul a{
+    color: black;
+    text-decoration: none;
+}
+
+header #header-list a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+header #header-list a:hover::after{
+    width: 100%;
+    background-color: #077187;
+}
+
+header div ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    gap: 4rem;
+    font-size: 22px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*header login and cart button*/
+
+header #header-btns{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: center;
+}
+header #header-login {
+    height: 3rem;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    background-color: #15616d;
+    color: #fff;
+}    
+
+header  #cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 8rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 1rem;
+    background-color: #dee2e6;
+    transition: all 0.2s ease;
+    
+}
+
+header #cart:hover{
+    background-color: #15616d;
+}
+
+/* Main container*/
+
+.container{
+    display: grid;
+    background-color: #fff;
+    border-radius: 2rem;
+    min-height: 55rem;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+
+#item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#item1 #main-para{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#item1 .buy-text{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+#item1 .buy-text span{
+    color: #15616d;
+}
+
+
+#item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#item2 img{
+    max-height: 40rem;
+    max-width: 40rem;
+    
+}
+
+
+main button{
+    height: 3rem;
+    width: 10rem;
+    font-size: larger;
+    font-weight: 800;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: #15616d;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(2, 71, 91, 0.2);
+    transition: all 0.5s ease;
+}
+
+main button:hover{
+    scale: 1.2;
+    rotate: 360deg;
+}
+
+
+main #textAnimate::before{
+    content: "CRYPTO!!";
+    animation: animate infinite 5s;
+}
+
+
+
+@keyframes animate{
+    0%{
+        content: "CRYPTO!!";
+    }
+    33%{
+        content: "FUTURE";
+    }
+    66%{
+        content: "BITCOIN";
+    }
+    100%{
+        content: "CRYPTO!!";
+    }
+}
+
+
+/*Marketplace styles*/
+
+.market-section{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    height: 14rem;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    /* background-color: #077187; */
+}
+
+.market-section div h1{
+    font-size: 2.3rem;
+}
+
+section .market-options{
+    display: flex;
+    /* background-color: #077187; */
+    gap: 4rem;
+}
+
+section .market-options span{
+    background-color: #fff;
+    height: 6rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+section .market-options a{
+    text-decoration: none;
+    color: black;
+}
+
+section .market-options span:hover{
+    box-shadow: none;
+    scale: 1.05;
+}
+
+section .market-options h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Cards section*/
+
+article{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 90%;
+    margin: auto;
+    gap: 3rem;
+}
+
+article div h1{
+    font-size: 2.5rem;
+}
+
+article .main-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2rem;
+}
+
+article .cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 30rem;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: all 0.2s ease;
+}
+
+article .cards:hover{
+    box-shadow: none;
+}
+
+article .card-part1 #card-img{
+    border-radius: 10px;
+    /* min-height: 100px;
+    max-width: 260px; */
+}
+
+article .card-part1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
+}
+
+article .cards-pricebtn{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+article #price{
+    background-color: #dee2e6;
+    width: 4rem;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+article .cards-pricebtn button{
+    font-size: 1rem;
+    background-color: #15616d;
+    color: #fff;
+    border: none;
+    min-height: 2rem;
+    width: 8rem;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+article .cards-pricebtn button:hover{
+    scale: 1.05;
+}
+
+article .card-part2{
+    display: flex;
+    margin-top: 1rem;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article #card-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dee2e6;
+    width: 7rem;
+    min-height: 2rem;
+    border-radius: 5px;
+}
+
+article .card-part2 button{
+    font-size: 1rem;
+    background-color: #15616d;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    height: 2rem;
+    width: 8rem;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+article .card-part2 button:hover{
+    background-color: #000;
+    scale: 1.05;
+}
+
+
+/*Footer styles*/
+
+.footer_container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    margin-top: 2rem;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #15616d;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #15616d;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+@media (max-width: 1000px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 5rem;
+        height: 125vh;
+    }
+
+    #bars i{
+        display: inline-block;
+    }
+
+    #header-list{
+        display: none;
+    }
+    #header-btns #cart , #header-login{
+        display: none;
+
+    }
+
+    #item1{
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #main-img{
+        height: 35rem;
+        width: 35rem;
+    }
+
+    header div h1{
+        font-size: 1.8rem;
+    }
+    header div ul{
+        gap: 1rem;
+        font-size: 18px;
+    }
+    header #header-btns{
+        gap: 0.8rem;
+    }
+    section .market-options{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    section .market-options span{
+        justify-content: center;
+    }
+
+    article .main-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 2rem;
+    }
+
+    article{
+        margin-top: 12rem;
+    }
+} 

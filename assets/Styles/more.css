@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    background-color: #dee2e6;
+}
+
+header{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+header button{
+    font-size: 20px;
+    background-color: #dee2e6;
+    border: none;
+}
+
+header button a{
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #15616d;
+}
+
+main .container div{
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+
+}
+
+main .container{
+    display: grid;
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1rem;
+}
+
+main .container #item1{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+main .container #item2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+main .container #item3{
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+main .container #item4{
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+main .container #item5{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+main .main-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+main .container #item2 ul{
+    list-style: none;
+    font-size: larger;
+    font-weight: 500;
+}
+
+main .container .main-item:hover{
+    scale: 1.05;
+    background: linear-gradient(45deg, #caf0f8, #90e0ef, #a8dadc
+    , #90e0ef, #caf0f8);
+}
+
+main .container div h1{
+    color: #15616d;
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #dee2e6;
+}
+
+header{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+header button{
+    font-size: 20px;
+    background-color: #dee2e6;
+    border: none;
+}
+
+header button a{
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #15616d;
+}
+
+main .container{
+    display: flex;
+    background-color: #fff;
+    height: 70vh;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5rem;
+    align-items: center;
+    width: 75vw;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .text{
+    display: flex;
+    width: 40vh;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    border-right: 1px solid black;
+}
+main form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    margin-left: 5vw;
+    flex-direction: column;
+    background-color: #0077b6;
+    background: linear-gradient(45deg, #caf0f8, #90e0ef, #a8dadc
+    , #90e0ef, #caf0f8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 60vh;
+    width: 40vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+    border-radius: 30px;
+}
+main form div a{
+    background-color: #e9ecef;
+    align-content: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+
+
+main form input{
+    border: none;
+    padding: 10px 100px 10px 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #e9ecef;
+}
+
+main form button{
+    border: none;
+    font-size: 20px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #15616d;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+main form button:hover{
+    scale: 1.1;
+    color: #fff;
+    box-shadow: none;
+}
+
+main .form h1{
+    color: #15616d;
+    text-shadow: 0 10px 20px rgb(0, 0, 0, 0.4);
+}
